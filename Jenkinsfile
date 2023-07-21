@@ -5,7 +5,7 @@ pipeline {
 		        stage('Checkout') {
 		            steps {
 		                // Checkout your Selenium UI testing framework code from the Git repository
-				 git branch: 'main', url:'https://github.com/Jerry98OnGithub/BenchSelenium_Assignment.git'
+				 git branch: 'main', url:'https://github.com/Jerry98OnGithub/BenchSelenium_work.git'
 
 		                echo 'checkout'
 		              }
