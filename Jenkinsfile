@@ -49,7 +49,7 @@ pipeline {
                 allowMissing: false,
                 alwaysLinkToLastBuild: true,
                 keepAll: true,
-                reportDir: 'target/reports',
+                reportDir: 'reports',
                 reportFiles: 'index.html',
                 reportName: 'Test Report'
             ])
