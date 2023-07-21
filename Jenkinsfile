@@ -53,7 +53,7 @@ pipeline {
     post {
 	        always {
 	            // Clean up or other actions, if required
-	            bat 'rmdir /s /q temp-files' // Clean up temporary files
+	            //bat 'rmdir /s /q temp-files' // Clean up temporary files
 			
 	            echo 'this is always command in post section'
 	        }
