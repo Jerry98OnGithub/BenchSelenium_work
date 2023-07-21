@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="11" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-20T23:39:22 IST" name="Suite" finished-at="2023-07-20T23:40:12 IST" duration-ms="49925">
+    <groups>
+    </groups>
+    <test started-at="2023-07-20T23:39:22 IST" name="Test" finished-at="2023-07-20T23:40:01 IST" duration-ms="38770">
+      <class name="Runfile.greenkartRun">
+        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:Runfile.greenkartRun@372ea2bc]" started-at="2023-07-20T23:39:22 IST" name="initializeDriver" finished-at="2023-07-20T23:39:27 IST" duration-ms="5180" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method signature="rungreencartfun()[pri:1, instance:Runfile.greenkartRun@372ea2bc]" started-at="2023-07-20T23:39:27 IST" name="rungreencartfun" finished-at="2023-07-20T23:39:47 IST" duration-ms="19942" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rungreencartfun -->
+        <test-method signature="CheckIncrementButton()[pri:2, instance:Runfile.greenkartRun@372ea2bc]" started-at="2023-07-20T23:39:47 IST" name="CheckIncrementButton" finished-at="2023-07-20T23:39:47 IST" duration-ms="172" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=114.0.5735.201)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [be8c3d3fc3e42aa7bae1776837d96927, clickElement {id=0E61B8214B75F56F1D1E58DB9B23ED3C_element_45}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.201, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64004}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64004/devtoo..., se:cdpVersion: 114.0.5735.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (be8c3d3fc3e42aa7bae1776837d96927)] -> xpath: //*[@id="root"]/div/div[1]/div/div/div[2]/a[2]]
+Session ID: be8c3d3fc3e42aa7bae1776837d96927]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=114.0.5735.201)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [be8c3d3fc3e42aa7bae1776837d96927, clickElement {id=0E61B8214B75F56F1D1E58DB9B23ED3C_element_45}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.201, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64004}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64004/devtoo..., se:cdpVersion: 114.0.5735.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (be8c3d3fc3e42aa7bae1776837d96927)] -> xpath: //*[@id="root"]/div/div[1]/div/div/div[2]/a[2]]
+Session ID: be8c3d3fc3e42aa7bae1776837d96927
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
+at PageObjectData.GreenCartData.clickIncrement_Btn(GreenCartData.java:73)
+at Runfile.greenkartRun.CheckIncrementButton(greenkartRun.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckIncrementButton -->
+        <test-method signature="ClickAddToCart()[pri:3, instance:Runfile.greenkartRun@372ea2bc]" started-at="2023-07-20T23:39:47 IST" name="ClickAddToCart" finished-at="2023-07-20T23:39:47 IST" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickAddToCart -->
+        <test-method signature="GoToCartCheck()[pri:4, instance:Runfile.greenkartRun@372ea2bc]" started-at="2023-07-20T23:39:47 IST" name="GoToCartCheck" finished-at="2023-07-20T23:39:47 IST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoToCartCheck -->
+        <test-method signature="CheckOutCheck()[pri:5, instance:Runfile.greenkartRun@372ea2bc]" started-at="2023-07-20T23:39:47 IST" name="CheckOutCheck" finished-at="2023-07-20T23:39:48 IST" duration-ms="149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckOutCheck -->
+        <test-method signature="PromoFieldCheck()[pri:6, instance:Runfile.greenkartRun@372ea2bc]" started-at="2023-07-20T23:39:48 IST" name="PromoFieldCheck" finished-at="2023-07-20T23:39:48 IST" duration-ms="708" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PromoFieldCheck -->
+        <test-method signature="promocodeCheck()[pri:7, instance:Runfile.greenkartRun@372ea2bc]" started-at="2023-07-20T23:39:48 IST" name="promocodeCheck" finished-at="2023-07-20T23:39:48 IST" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- promocodeCheck -->
+        <test-method signature="PlaceorderCheck()[pri:8, instance:Runfile.greenkartRun@372ea2bc]" started-at="2023-07-20T23:39:48 IST" name="PlaceorderCheck" finished-at="2023-07-20T23:39:49 IST" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PlaceorderCheck -->
+        <test-method signature="SelectCountryDropDown()[pri:9, instance:Runfile.greenkartRun@372ea2bc]" started-at="2023-07-20T23:39:49 IST" name="SelectCountryDropDown" finished-at="2023-07-20T23:39:52 IST" duration-ms="3368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectCountryDropDown -->
+        <test-method signature="ClickCheckBtn()[pri:10, instance:Runfile.greenkartRun@372ea2bc]" started-at="2023-07-20T23:39:52 IST" name="ClickCheckBtn" finished-at="2023-07-20T23:39:55 IST" duration-ms="3127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickCheckBtn -->
+        <test-method signature="FinalProceedBtn()[pri:11, instance:Runfile.greenkartRun@372ea2bc]" started-at="2023-07-20T23:39:55 IST" name="FinalProceedBtn" finished-at="2023-07-20T23:40:00 IST" duration-ms="5116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FinalProceedBtn -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:Runfile.greenkartRun@372ea2bc]" started-at="2023-07-20T23:40:00 IST" name="closeDriver" finished-at="2023-07-20T23:40:01 IST" duration-ms="294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- Runfile.greenkartRun -->
+    </test> <!-- Test -->
+    <test started-at="2023-07-20T23:40:01 IST" name="flight" finished-at="2023-07-20T23:40:12 IST" duration-ms="11053">
+      <class name="Runfile.FlightSiteRun">
+        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:Runfile.FlightSiteRun@4b21844c]" started-at="2023-07-20T23:40:01 IST" name="initializeDriver" finished-at="2023-07-20T23:40:03 IST" duration-ms="2025" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method signature="CountryFieldCheck()[pri:1, instance:Runfile.FlightSiteRun@4b21844c]" started-at="2023-07-20T23:40:03 IST" name="CountryFieldCheck" finished-at="2023-07-20T23:40:05 IST" duration-ms="2779" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CountryFieldCheck -->
+        <test-method signature="flightBook()[pri:2, instance:Runfile.FlightSiteRun@4b21844c]" started-at="2023-07-20T23:40:05 IST" name="flightBook" finished-at="2023-07-20T23:40:10 IST" duration-ms="5071" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//body[1]/form[1]/div[4]/div[2]/div[1]/div[5]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[3]/a[1]/span[2]"}
+  (Session info: chrome=114.0.5735.201)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [14305936016221d2a5b0fa69942827c5, findElement {using=xpath, value=//body[1]/form[1]/div[4]/div[2]/div[1]/div[5]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[3]/a[1]/span[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.201, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64073}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64073/devtoo..., se:cdpVersion: 114.0.5735.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 14305936016221d2a5b0fa69942827c5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//body[1]/form[1]/div[4]/div[2]/div[1]/div[5]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[3]/a[1]/span[2]"}
+  (Session info: chrome=114.0.5735.201)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [14305936016221d2a5b0fa69942827c5, findElement {using=xpath, value=//body[1]/form[1]/div[4]/div[2]/div[1]/div[5]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[3]/a[1]/span[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.201, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64073}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64073/devtoo..., se:cdpVersion: 114.0.5735.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 14305936016221d2a5b0fa69942827c5
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source)
+at PageObjectData.FlightData.TripTypeRadioButton(FlightData.java:36)
+at Runfile.FlightSiteRun.flightBook(FlightSiteRun.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightBook -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:Runfile.FlightSiteRun@4b21844c]" started-at="2023-07-20T23:40:11 IST" name="closeDriver" finished-at="2023-07-20T23:40:12 IST" duration-ms="1155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- Runfile.FlightSiteRun -->
+    </test> <!-- flight -->
+  </suite> <!-- Suite -->
+</testng-results>

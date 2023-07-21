@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">38,770</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">flight</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">11,053</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">11</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">49,823</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Runfile.greenkartRun</td><td><a href="#m0">CheckIncrementButton</a></td><td rowspan="1">1689876587410</td><td rowspan="1">172</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="10">Runfile.greenkartRun</td><td><a href="#m1">CheckOutCheck</a></td><td rowspan="1">1689876587969</td><td rowspan="1">149</td></tr><tr class="passedeven"><td><a href="#m2">ClickAddToCart</a></td><td rowspan="1">1689876587589</td><td rowspan="1">193</td></tr><tr class="passedeven"><td><a href="#m3">ClickCheckBtn</a></td><td rowspan="1">1689876592468</td><td rowspan="1">3127</td></tr><tr class="passedeven"><td><a href="#m4">FinalProceedBtn</a></td><td rowspan="1">1689876595598</td><td rowspan="1">5116</td></tr><tr class="passedeven"><td><a href="#m5">GoToCartCheck</a></td><td rowspan="1">1689876587787</td><td rowspan="1">178</td></tr><tr class="passedeven"><td><a href="#m6">PlaceorderCheck</a></td><td rowspan="1">1689876588960</td><td rowspan="1">139</td></tr><tr class="passedeven"><td><a href="#m7">PromoFieldCheck</a></td><td rowspan="1">1689876588119</td><td rowspan="1">708</td></tr><tr class="passedeven"><td><a href="#m8">SelectCountryDropDown</a></td><td rowspan="1">1689876589099</td><td rowspan="1">3368</td></tr><tr class="passedeven"><td><a href="#m9">promocodeCheck</a></td><td rowspan="1">1689876588832</td><td rowspan="1">120</td></tr><tr class="passedeven"><td><a href="#m10">rungreencartfun</a></td><td rowspan="1">1689876567455</td><td rowspan="1">19942</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">flight &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Runfile.FlightSiteRun</td><td><a href="#m11">flightBook</a></td><td rowspan="1">1689876605927</td><td rowspan="1">5071</td></tr><tr><th colspan="4">flight &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Runfile.FlightSiteRun</td><td><a href="#m12">CountryFieldCheck</a></td><td rowspan="1">1689876603148</td><td rowspan="1">2779</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">Runfile.greenkartRun#CheckIncrementButton</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=114.0.5735.201)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [be8c3d3fc3e42aa7bae1776837d96927, clickElement {id=0E61B8214B75F56F1D1E58DB9B23ED3C_element_45}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.201, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64004}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64004/devtoo..., se:cdpVersion: 114.0.5735.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (be8c3d3fc3e42aa7bae1776837d96927)] -&gt; xpath: //*[@id=&quot;root&quot;]/div/div[1]/div/div/div[2]/a[2]]
+Session ID: be8c3d3fc3e42aa7bae1776837d96927
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
+	at PageObjectData.GreenCartData.clickIncrement_Btn(GreenCartData.java:73)
+	at Runfile.greenkartRun.CheckIncrementButton(greenkartRun.java:36)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Runfile.greenkartRun#CheckOutCheck</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Runfile.greenkartRun#ClickAddToCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Runfile.greenkartRun#ClickCheckBtn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Runfile.greenkartRun#FinalProceedBtn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Runfile.greenkartRun#GoToCartCheck</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Runfile.greenkartRun#PlaceorderCheck</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Runfile.greenkartRun#PromoFieldCheck</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">Runfile.greenkartRun#SelectCountryDropDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">Runfile.greenkartRun#promocodeCheck</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">Runfile.greenkartRun#rungreencartfun</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>flight</h2><h3 id="m11">Runfile.FlightSiteRun#flightBook</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//body[1]/form[1]/div[4]/div[2]/div[1]/div[5]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[3]/a[1]/span[2]&quot;}
+  (Session info: chrome=114.0.5735.201)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [14305936016221d2a5b0fa69942827c5, findElement {using=xpath, value=//body[1]/form[1]/div[4]/div[2]/div[1]/div[5]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[3]/a[1]/span[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.201, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64073}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64073/devtoo..., se:cdpVersion: 114.0.5735.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 14305936016221d2a5b0fa69942827c5
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source)
+	at PageObjectData.FlightData.TripTypeRadioButton(FlightData.java:36)
+	at Runfile.FlightSiteRun.flightBook(FlightSiteRun.java:29)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">Runfile.FlightSiteRun#CountryFieldCheck</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
