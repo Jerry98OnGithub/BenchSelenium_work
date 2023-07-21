@@ -16,7 +16,7 @@ pipeline {
 		                // Build your Selenium project using Maven
 				    dir('BenchSelenium_work'){
 				        echo 'build'
-				       bat 'mvn – f <pom.xml> compile'
+				       bat 'mvn clean'
 				    }
 		             }
 		          }
