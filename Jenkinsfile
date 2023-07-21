@@ -14,9 +14,10 @@ pipeline {
 		        stage('Build') {
 		            steps {
 		                // Build your Selenium project using Maven
-		                //sh 'mvn clean package' // Assuming your framework uses Maven
+				    dir('BenchSelenium_work'){
 				        echo 'build'
-				    bat 'mvn clean'
+				       bat 'mvn clean'
+				    }
 		             }
 		          }
         
