@@ -14,7 +14,7 @@ pipeline {
 		        stage('Build') {
 		            steps {
 		                // Build your Selenium project using Maven
-				    dir('C:\ProgramData\Jenkins\.jenkins\workspace\Jenkins_Assignment-2023'){
+				    dir('.'){
 				        echo 'build'
 				       bat 'mvn clean'
 				    }
