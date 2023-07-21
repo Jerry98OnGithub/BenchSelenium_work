@@ -16,7 +16,7 @@ pipeline {
 		                // Build your Selenium project using Maven
 		                //sh 'mvn clean package' // Assuming your framework uses Maven
 				        echo 'build'
-				    bat 'mvn clean package'
+				    bat 'mvn clean'
 		             }
 		          }
         
