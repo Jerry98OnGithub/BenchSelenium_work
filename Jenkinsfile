@@ -49,7 +49,7 @@ pipeline {
                 allowMissing: false,
                 alwaysLinkToLastBuild: true,
                 keepAll: true,
-                reportDir: 'target/surefire-reports',
+                reportDir: 'target/reports',
                 reportFiles: 'index.html',
                 reportName: 'Test Report'
             ])
