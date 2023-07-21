@@ -45,6 +45,14 @@ pipeline {
 	        always {
 	            // Clean up or other actions, if required
 	            //sh 'rm -rf temp-files/' // Clean up temporary files
+			publishHTML(target: [
+                allowMissing: false,
+                alwaysLinkToLastBuild: true,
+                keepAll: true,
+                reportDir: 'target/surefire-reports',
+                reportFiles: 'index.html',
+                reportName: 'Test Report'
+            ])
 	            echo 'this is always command in post section'
 	        }
         
