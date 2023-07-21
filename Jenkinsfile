@@ -26,6 +26,7 @@ pipeline {
 		                // Run your Selenium UI tests using Maven
 		               // sh 'mvn test' // Assuming your framework uses Maven to run tests
 				        echo 'test'
+				    bat 'mvn test'
 		            }
 		         }
         
