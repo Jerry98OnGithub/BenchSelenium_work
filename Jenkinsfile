@@ -34,6 +34,15 @@ pipeline {
 		            steps {
 		                // Publish test reports using HTML Publisher plugin
 		               echo 'this is publish reports section'
+				     // Publish test reports using HTML Publisher plugin
+			                publishHTML(target: [
+			                    allowMissing: false,
+			                    alwaysLinkToLastBuild: true,
+			                    keepAll: true,
+			                    reportDir: 'target/surefire-reports',
+			                    reportFiles: 'index.html',
+			                    reportName: 'Test Report'
+			                ])
 			    }
 		        }
         
@@ -44,15 +53,8 @@ pipeline {
     post {
 	        always {
 	            // Clean up or other actions, if required
-	            //sh 'rm -rf temp-files/' // Clean up temporary files
-			publishHTML(target: [
-                allowMissing: false,
-                alwaysLinkToLastBuild: true,
-                keepAll: true,
-                reportDir: 'target',
-                reportFiles: 'index.html',
-                reportName: 'Test Report'
-            ])
+	            bat 'rm -rf temp-files/' // Clean up temporary files
+			
 	            echo 'this is always command in post section'
 	        }
         
