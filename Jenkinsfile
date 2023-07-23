@@ -4,7 +4,7 @@ pipeline {
 	 stages {
 		        stage('Checkout') {
 		            steps {
-		                // Checkout your Selenium UI testing framework code from the Git repository
+		                // Checkout Selenium UI testing framework code from the Git repository
 				 git branch: 'main', url:'https://github.com/Jerry98OnGithub/BenchSelenium_work.git'
 
 		                echo 'checkout'
@@ -13,20 +13,19 @@ pipeline {
 		        
 		        stage('Build') {
 		            steps {
-		                // Build your Selenium project using Maven
+		                // Build Selenium project using Maven
 				    dir('.'){
 				        echo 'build'
-				       bat 'mvn clean'
+				        bat 'mvn clean'
 				    }
 		             }
 		          }
         
 		        stage('Test') {
 		            steps {
-		                // Run your Selenium UI tests using Maven
-		               // sh 'mvn test' // Assuming your framework uses Maven to run tests
+		                // Run Selenium UI tests using Maven
 				        echo 'test'
-				    bat 'mvn test'
+				        bat 'mvn test'
 		            }
 		         }
         
@@ -34,7 +33,6 @@ pipeline {
 		            steps {
 		                // Publish test reports using HTML Publisher plugin
 		               echo 'this is publish reports section'
-				     // Publish test reports using HTML Publisher plugin
 			                publishHTML(target: [
 			                    allowMissing: false,
 			                    alwaysLinkToLastBuild: true,
@@ -46,14 +44,11 @@ pipeline {
 			    }
 		        }
         
-      			  // Add more stages as per your requirements
-        
           }
     
     post {
 	        always {
-	            // Clean up or other actions, if required
-	            //bat 'rmdir /s /q temp-files' // Clean up temporary files
+			// Clean up temporary files
 			
 	            echo 'this is always command in post section'
 	        }
